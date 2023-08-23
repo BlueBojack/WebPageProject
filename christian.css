@@ -112,7 +112,7 @@ h3{
 .carosello-container{
     margin-top: -90px;
     display: flex;
-    justify-content:left;
+    justify-content: space-between;
     overflow-x: scroll;
     overflow-y: hidden;
     justify-content: left;
@@ -123,10 +123,13 @@ h3{
 
 
 
+
+
 .carosello1{
    min-width: auto;
     height: auto;
     display: flex;
+    transition: transform 0.5s;
     justify-content: center;
     margin: 50px 40px ;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -139,6 +142,7 @@ h3{
     display: block;
     position: relative;
     width:max-content;
+  
  
 }
 
@@ -146,9 +150,8 @@ h3{
 .carosel1{
     position: relative;
     display: block;
-    
+    flex: 0 0 100%;
 }  
-
 
 
 .caroselloStart{
@@ -163,15 +166,6 @@ justify-content: left;
     flex-direction: column;
     justify-content: flex-end;
 }
-
-.bordoCard {
-    border: 1px solid;
-    border-radius: 8px;  /* Aggiungi un bordo arrotondato per un aspetto più piacevole */
-    padding: 10px;  /* Aggiungi uno spazio interno al bordo per separare il contenuto dal bordo */
-    box-sizing: border-box;  /* Assicurati che il padding non aumenti la dimensione totale della card */
-}
-
-
 
 
 .foto1{
