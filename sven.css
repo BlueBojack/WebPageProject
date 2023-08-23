@@ -5,7 +5,7 @@
 :root {
   --handle-size: 5rem;
   --handle-size-reversed: -5rem;
-  --img-gap: 3rem;
+  --img-gap: 2.9rem;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.featured-block .container {
   position: relative;
   width: calc(100% + 2*var(--handle-size));
   display: flex;
@@ -22,7 +22,7 @@ body {
   
 }
 
-.slider {
+.featured-block .slider {
   overflow-x:hidden;
   --items-per-screen: 4.8;
   margin-left: 8px;
@@ -47,7 +47,7 @@ body {
   
 }
 
-.slider .news-card {
+.featured-block .slider .news-card {
   
   border: 1px solid #ccc;
   flex: 0 0 251.5px;
@@ -58,8 +58,8 @@ body {
   margin-bottom: 24px;
   border-radius: 0.3rem;
 }
-.slider .news-card img{
-  
+.featured-block .slider .news-card img{
+  transition: 350ms;
   flex: 0 0 100%;
   max-width: 100%;
   aspect-ratio: 16 / 9;
@@ -127,6 +127,24 @@ body {
   background-color: rgba(0, 0, 0, 0.363);
 }
 
+.handle:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+.news-card:hover h3{
+  color: rgb(230, 0, 18);
+}
+
+.news-card:hover img{
+  transform: translateY(-1rem);
+}
+.store-block button:hover{
+  background-color: rgb(172, 0, 13);
+  border-color: rgb(172, 0, 13);
+  
+  transform: scaleX(1.05) scaleY(1.05);
+  
+
+}
 .text {
   transition: transform 150ms ease-in-out;
 }
@@ -165,6 +183,8 @@ margin-bottom: 25px;
   color: rgb(72, 72, 72);
   margin: 1.2rem 0;
   padding: 0 16px;
+
+  transition: 350ms;
 }
 
 .featured-block {
@@ -217,7 +237,7 @@ margin-bottom: 25px;
   padding-right: 20px;
   margin-left: 40px;
   
-  
+  transition: 250ms;
 }
 .game-card .game-card-content{
   padding: 0 16px;
