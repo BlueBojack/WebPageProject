@@ -1,1 +1,479 @@
-!
+@import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    
+    box-sizing: border-box;
+                                                
+}
+
+nav {
+    width: 100vw;
+    height: 96px;
+}
+
+nav .top-navbar {
+    width: 100vw;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.2px solid gray;
+}
+
+nav .top-navbar .logo a{
+    color: white;
+}
+
+nav .top-navbar .top-left-navbar {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 10px;
+}
+
+nav .top-navbar .top-left-navbar .logo {
+
+    width: 105px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+
+nav .top-navbar .top-left-navbar select{
+    border:0px;
+    outline:none;
+    margin: none;
+    outline: none;
+    position: relative;
+    appearance: none;
+    
+}
+
+nav .top-navbar .top-left-navbar .ricerca {
+
+    border: none;
+    text-decoration: none;
+    outline: none;
+    width: 350px;
+}
+
+nav .top-navbar .top-right-navbar {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    gap: 1.73rem;
+    
+}
+
+nav .top-navbar .top-right-navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .top-navbar .top-right-navbar a:hover{
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+
+nav .top-navbar .top-right-navbar svg {
+    display: relative;
+    right: 65px;
+}
+
+.underline {
+
+    height: 1px;
+    width: 500px;
+    
+    position: relative;
+    left: 110px;
+    bottom: 10px;
+    border: black solid 1px;
+}
+.hover-wrap p{
+
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+nav .bottom-navbar .menu {
+    width: 100vw;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+}
+
+nav .bottom-navbar .menu button{
+
+   border: none;
+   background-color: none;
+   outline: none;
+
+}
+
+.mynintendo-items {
+    
+    display: none;
+    position: absolute;
+    width: 1877px;
+    height: 300px;
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.column a {
+
+    font-family: "museo-sans-rounded" ,sans-serif;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.column a:hover {
+    transition: 0.4 ease;
+    color: red;
+}
+
+.column a svg {
+
+    color: red;
+}
+
+.highlight {
+
+    color: black;
+    font-size: 15px;
+}
+
+.mynintendo-dropdown:hover .hover-wrap{
+
+    color: red;
+    transition: 0.4s ease;
+
+}
+
+.mynintendo-dropdown:hover .mynintendo-items {
+
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 140px;
+  width: 1035px;
+  top: 150px;
+  right: 400px;
+  gap:25px;
+  background-color: white;
+  padding: 16px;
+  margin-left: 404px;
+}
+
+.mynintendo-dropdown:hover .cta-shop {
+
+   position: relative;
+   right: 500px;
+   top: 150px;
+   border-radius: 7px;
+   width: 115px;
+   height: 48px;
+   border: 1px solid red;
+   background-color: white;
+   font-weight: 400;
+   font-size: 17px;
+
+}
+
+.cta-shop {
+
+   position: relative;
+   right: 500px;
+   top: 150px;
+   border-radius: 200px;
+   width: 115px;
+   height: 48px;
+   
+
+}
+
+.mynintendo-dropdown:hover .cta-shop:hover {
+
+   background-color: pink;
+   transition: 0.4s ease;
+
+}
+
+.mynintendo-dropdown:hover .cta-shop a {
+
+   text-decoration: none;
+   color: red;
+
+}
+
+.mynintendo-items:hover .mynintendo-items {
+
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  width: 1067px;
+  top: 100px;
+  right: 350px;
+}
+
+.cta-shop {
+
+    display: ;
+}
+
+.logo-item {
+
+width: 100vw;
+height: 80px;
+background-color: red;
+
+}
+
+.games-dropdown:hover .hover-wrap {
+
+    color: red;
+    transition: 0.4s ease;
+}
+
+.games-dropdown:hover .games-items {
+
+
+    position: absolute;
+    display: flex;
+    width: 961px;
+    height: 145px;
+    flex-direction: row;
+    right: 300px;
+    gap: 30px;
+    top: 160px;
+    
+}
+
+.games-dropdown:hover .svg-border {
+
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    
+}
+
+.games-items {
+
+    position: absolute;
+    display: none;
+}
+
+.game-item a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.games-items .svg-container button {
+
+    background-color: white;
+}
+.games-items .svg-container button:hover {
+
+    background-color: red;
+    transition: 0.4s ease;
+}
+
+.games-items .svg-container button:hover svg {
+
+    color: white;
+
+}
+
+.switch-items{
+
+    display: none;
+}
+
+.svg-container button {
+    width: 120px;
+    height: 68px;
+}
+
+.svg-container p {
+
+    font-family: "Museo Sans rounded", sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    
+}
+
+.switch-dropdown:hover .hover-wrap{
+
+    color: red;
+    transition: 0.4s;
+}
+
+ .switch-dropdown:hover .switch-items {
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 961px;
+    height: 145px;
+    gap: 50px;
+    top: 130px;
+    left: 0px;
+    margin-left:442px ;
+    margin-right: 442px;
+    padding: 16px;
+    text-align: center;
+}
+
+.switch-item button {
+
+    height: 68px;
+    width: 120px;
+
+}
+
+#special-button {
+
+    width: 255px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+
+}
+
+.switch-items .switch-item button {
+
+    background-color: white;
+    border: 1px black solid;
+}
+
+.switch-items .switch-item:hover button {
+
+    background-color: red;
+    transition: 0.4s ease;
+}
+
+.switch-items .switch-item:hover svg {
+
+    color: white;
+}
+
+#special-svg {
+
+    color: red;
+}
+
+.switch-items .switch-item:hover a {
+
+    color: red;
+    transition: 0.4s ease;
+}
+
+.switch-items .switch-item a {
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.switch-dropdown:hover .switch-border {
+border-radius: 3px;
+    border: 1px solid lightgrey;
+}
+
+.news-event .hover-wrap a {
+    
+    color: black;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: "Museo Sans Rounded",sans-serif;
+    text-decoration: none ;
+
+
+}
+
+.news-event .hover-wrap a:hover{
+   
+    color: red;
+    transition: 0.4s ease;
+    
+}
+
+.play-dropdown .hover-wrap a:hover {
+
+    color: red;
+    transition: 0.4s ease;
+}
+
+.play-items {
+
+    display: none;
+}
+
+.play-dropdown:hover .play-items {
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 961px;
+    height: 145px;
+    gap: 50px;
+    top: 130px;
+    left: 290px;
+    margin-left:442px ;
+    margin-right: 442px;
+    padding: 16px;
+    text-align: center;
+}
+
+.play-item button {
+
+    height: 68px;
+    width: 120px;
+    background-color: white;
+    
+}
+
+.play-item button:hover {
+
+    background-color: red;
+    transition: 0.4s ease;
+}
+
+.play-item button:hover svg {
+
+    color: white;
+}
+
+.play-dropdown:hover .play-border {
+
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    
+}
+
+.play-items .play-item a {
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
