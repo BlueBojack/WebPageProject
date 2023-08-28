@@ -1,6 +1,8 @@
+
+
 h2 {
-    text-align:start;
-    margin-left: 300px;
+    text-align:left;
+    margin-left: 390px;
     font-size: 20px; 
     color: rgb(72, 72, 72);
     margin-top: 40px; 
@@ -9,7 +11,7 @@ h2 {
   }
 
 
-section{
+.sezioneImg{
     border: 3% solid;
     position: relative;
     display: flex;
@@ -17,21 +19,19 @@ section{
     flex-direction: row;
     justify-content: center;
     margin-left: 100px;
-    gap: 1rem
+    gap: 1rem;
 }
 
-
-div{
+.card{
     width: 20ch;
     height: 20ch;
-    margin:0;
-    text-align: center;
-    font-size: 20px;
 }
 
 
 .card-content{
     overflow: hidden;
+    width: 20ch;
+    height: 20ch;
 }
 
 
@@ -81,10 +81,13 @@ h3{
     background-color: black;
    margin-top: 60px; 
    opacity: 0.2;
+  
   }
 
 
   .barraAlto {
+    width: 20ch;
+    height: 20ch;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,27 +113,22 @@ h3{
   }
 
 .carosello-container{
-    margin-top: -90px;
+ 
+    margin-top: 5px;
     display: flex;
-    justify-content: space-between;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y:hidden;
     justify-content: left;
-    margin-left: 70px;
-    min-width:1200px;
-    height: 350px;
+    height: 450px;
+    width: 1200px;
 }
 
 
 
-
-
 .carosello1{
-   min-width: auto;
-    height: auto;
-    display: flex;
+    width: 20ch;
+    height: 20ch;
     transition: transform 0.5s;
-    justify-content: center;
     margin: 50px 40px ;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
@@ -141,13 +139,13 @@ h3{
 .carosel{
     display: block;
     position: relative;
-    width:max-content;
   
- 
 }
 
 
 .carosel1{
+    width: 20ch;
+    height: 20ch;
     position: relative;
     display: block;
     flex: 0 0 100%;
@@ -155,8 +153,10 @@ h3{
 
 
 .caroselloStart{
+    width: 20ch;
+    height: 20ch;
     display: flex;
-justify-content: left;
+    justify-content: left;
 
 
 }
@@ -165,10 +165,14 @@ justify-content: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 20ch;
+    height: 20ch;
 }
 
 
 .foto1{
+  width: 220px;
+  height: 130px;
     border-top-left-radius: 1%;
     margin-left: 320px;
     margin-bottom: 10px;
@@ -185,7 +189,7 @@ justify-content: left;
 .scrittafoto1{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     
 }
 
@@ -193,12 +197,15 @@ justify-content: left;
     display: block;
     position: relative;
    margin-left: 320px;
-   margin-bottom: 10px;
-   margin-top: -95px;
+   margin-top: -10px;
+   width: 20ch;
+    height: 20ch;
    
 }
 
 .scritteCarosello{
+    width: 20ch;
+    height: 40px;
     font-size: 12px;
     margin-top: 1px;
     margin-bottom: 0;
@@ -209,7 +216,7 @@ justify-content: left;
 .data{
     font-size: 10px;
     text-align: left;
-    margin-bottom: 0;
+   margin-bottom: 150px;
 }
 
 .prezzo{
@@ -217,22 +224,25 @@ justify-content: left;
     flex-direction: column;
     text-align: left;
     margin-left: 320px;
-    min-height: 210px;
+    margin-top: -50px;
     font-size: 14px;
     font-weight: bold;
+    width: 20ch;
+    height: 20ch;
+    
 }
 
 .ultimaScritta{
-    display: grid;
-    grid-template-columns: 1fr 2.5rem;
-    margin-left:325px;
-    margin-top: 40px;
+    margin-left:320px;
+    margin-top: 150px;
     font-size: 10px;
+   
 }
 
 
 .cuore{
     width: 240px;
     height: 19px;
-    margin: 5%;
+    margin:0;
+    margin-right: 10px;
 }
