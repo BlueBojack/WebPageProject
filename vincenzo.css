@@ -40,9 +40,12 @@ font-size: 25px;
 font-weight:lighter;
 }
 
+
+
 .container1 h2 {
 margin: 0; /* Rimuove il margine predefinito dal titolo */
-
+font-size: 25px;
+margin-left: 70px;
 }
 
 .container1 > div {
