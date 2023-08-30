@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+.body-01{
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -166,7 +166,7 @@ span {
 }
 
 
-.card {
+.card-ale {
     width: 25%;
     margin-top: 40px;
 }
@@ -184,21 +184,21 @@ span {
     margin-bottom: 1rem;
 }
 
-.card:hover {
+.card-ale:hover {
     transition: opacity 200ms ease-in-out 25ms;
 }
 
-.card:hover img {
+.card-ale:hover img {
     filter: brightness(70%);
 
 }
 
-.card:hover .text-contenitor h3 {
+.card-ale:hover .text-contenitor h3 {
     transition: color 0.3s;
     color: rgb(230, 0, 18);
 }
 
-.card:hover .read {
+.card-ale:hover .read {
     color: rgb(172, 0, 13);
 }
 
@@ -206,7 +206,7 @@ span {
     margin-top: 3rem;
 }
 
-svg {
+.svg-01 {
     height: 1.125rem;
     width: auto;
     margin-left: 0px;
