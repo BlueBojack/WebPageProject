@@ -1,0 +1,256 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --handle-size: 5rem;
+  --handle-size-reversed: -5rem;
+  --img-gap: 2.9rem;
+}
+
+body {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.featured-block .container {
+  position: relative;
+  width: calc(100% + 2*var(--handle-size));
+  display: flex;
+  left: var(--handle-size-reversed);
+  
+}
+
+.featured-block .slider {
+  overflow-x:hidden;
+  --items-per-screen: 4.8;
+  margin-left: 8px;
+  display: flex;
+  flex-grow: 1;
+  
+  /* margin-left: calc(-20px - var(--handle-size)); */
+  scroll-behavior: smooth;
+  
+}
+
+.games-slider {
+  overflow-x:hidden;
+  --items-per-screen: 4.8;
+  margin-left: 30px;
+  gap: 35px;
+  display: flex;
+  flex-grow: 1;
+  
+  /* margin-left: calc(-20px - var(--handle-size)); */
+  scroll-behavior: smooth;
+  
+}
+
+.featured-block .slider .news-card {
+  
+  border: 1px solid #ccc;
+  flex: 0 0 251.5px;
+  max-width: 251.5px;
+  aspect-ratio: 16 / 9;
+  margin-right: var(--img-gap);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 0.3rem;
+}
+.featured-block .slider .news-card img{
+  transition: 350ms;
+  flex: 0 0 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.3rem;
+}
+
+.games-slider .game-card{
+  border: 1px solid #ccc;
+  flex: 0 0 244.5px;
+  max-width: 244.5px;
+  aspect-ratio: 16 / 9;
+  
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 0.3rem;
+ 
+}
+
+.games-slider .game-card img{
+  flex: 0 0 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.3rem;
+}
+
+
+.handle {
+  border: none;
+  height: var(--handle-size)*100;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.221);
+  z-index: 10;
+  
+  width: var(--handle-size);
+  cursor: pointer;
+  font-size: 5rem;
+
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.865);
+  line-height: 0;
+  transition: background-color 150ms ease-in-out;
+
+  border-radius: 0.25rem 0px 0px 0.25rem;
+}
+
+.left-handle {
+  
+  position: relative;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  left: -200px;
+}
+
+.right-handle {
+  position: relative;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  right: calc(var(--handle-size));
+}
+
+.handle:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.handle:hover {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+.news-card:hover h3{
+  color: rgb(230, 0, 18);
+}
+
+.news-card:hover img{
+  transform: translateY(-1rem);
+}
+.store-block button:hover{
+  background-color: rgb(172, 0, 13);
+  border-color: rgb(172, 0, 13);
+  
+  transform: scaleX(1.05) scaleY(1.05);
+  
+
+}
+.text {
+  transition: transform 150ms ease-in-out;
+}
+
+.handle:hover .text{
+  transform: scale(1.2);
+  color: rgb(255, 255, 255);
+}
+
+.news-card .bottom-nintendo{
+  font-size: 0.6em;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+
+.red-stick{
+  width: 3px;
+  height: 1.19rem;
+  background-color: rgb(230, 0, 18);
+  margin-right: 5px;
+  margin-left: 16px;
+  margin-top: 3px;
+}
+.news-card .bottom-nintendo span{
+font-size: 1rem;
+color: rgb(109, 109, 109);
+margin-bottom: 25px;
+}
+
+.news-card h3 {
+  height: 4rem;
+  font-weight:650;
+  font-size: 1.1rem;
+  color: rgb(72, 72, 72);
+  margin: 1.2rem 0;
+  padding: 0 16px;
+
+  transition: 350ms;
+}
+
+.featured-block {
+  margin-left: 24px;
+}
+
+.featured-block h2{
+  color: rgb(72, 72, 72);
+  margin-bottom: 0px;
+  font-weight:630;
+  font-size: 2rem;
+}
+.store-block{
+  margin: 65px;
+}
+.store-block h2{
+  color: rgb(72, 72, 72);
+  
+  font-weight:630;
+  font-size: 2rem;
+}
+.store-block img{
+  width: 100%;
+}
+.store-block .bottom-content{
+  display: flex;
+  margin-top: 50px;
+  
+}
+.store-block strong{
+  
+ 
+  color: rgb(72, 72, 72);
+  font-weight:630;
+  font-size: 1.3rem;
+  
+}
+.store-block button{
+  white-space: nowrap;
+  background-color: rgb(230, 0, 18);
+  color: white;
+  font-weight:630;
+  font-size: 1.1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 0, 18);
+  border-radius: 0.25rem;
+  height: 47px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  
+  transition: 250ms;
+}
+.game-card .game-card-content{
+  padding: 0 16px;
+}
+.best-sellers{
+  margin-left: 24px;
+}
+
+.game-card h3{
+  margin-bottom: 0px;
+}
+.game-card .release-data{
+  margin-bottom: 45px;
+}
+
+

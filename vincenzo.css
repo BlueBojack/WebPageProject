@@ -23,6 +23,7 @@ background-color: rgb(168, 219, 168);
   display: flex;
   justify-content: center;
 width: 100%;
+
 }
 
 
@@ -44,7 +45,16 @@ font-weight:lighter;
 
 .container1 h2 {
 margin: 0; /* Rimuove il margine predefinito dal titolo */
+font-size: 25px;
+font-weight:lighter;
+}
 
+
+
+.container1 h2 {
+margin: 0; /* Rimuove il margine predefinito dal titolo */
+font-size: 25px;
+margin-left: 70px;
 }
 
 .container1 > div {
@@ -80,6 +90,4 @@ margin-right:240px;
 
 }
 
-/* #Bottonerosso:hover {
-padding: 30;
-} serve js */
+
