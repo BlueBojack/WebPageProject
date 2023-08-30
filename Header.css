@@ -5,79 +5,87 @@
   }
   
 body {
-    background-color: rgb(168, 219, 168);
+    background-color:white
 }
 
-.HeaderImage {
+header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 5%;
+  
 
-    position: ;
+  background-color: rgb(168, 219, 168);
+}
+
+.immagine1 {
+  width: 2000px;
+}
+  
+
+  
+section {
+  padding: 30px;
+  display:flex;
+  justify-content: center;
+  background-color: white;
 
 }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(247, 244, 241);
-    height: 52px;
-    justify-content: center;
-    
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .svg {
-    background-color: red;
-    color: white;
-    width: 105px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-  }
-  .firstnav {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    
-    
-  }
-  
-  input{
-      height: 70%;
-  }
-  
-  .secondnav{
-      width: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 10px;
-      
-      
-      
-  }
-  
-  .list{
-      display: flex;
-   
-      
-      gap: 20px;
-  
-  }
-  
-  
-  span{
-      margin-right: 10px;
-  }
+.container1 {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight:lighter;
+}
 
+.container1 h2 {
+  margin: 0; / Rimuove il margine predefinito dal titolo /
+ 
+}
+
+.container1 > div {
+  margin: 0 10px; / Aggiunge margine orizzontale tra gli elementi /
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
   
-  a{ color: rgb(70, 69, 69);
-      text-decoration: none;
-      font-size:  20px;
-      font-weight: 700;
-  }
+}
+
+.element1 {
+  display: flex;
+  align-items: center;
+}
+
+.element2 {
+  display: flex;
+  align-items: center;
+}
+
+ #Bottonerosso {
+padding: 20;
+border-radius: 5%;
+background-color: red;
+color: white;
+margin: 30px;
+margin-right:240px;
+
+
+ }
+
+ /* #Bottonerosso:hover {
+  padding: 30;
+ } serve js */
+
+ 
+
+
+ 
+ 
   
  
