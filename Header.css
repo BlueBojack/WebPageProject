@@ -20,7 +20,9 @@ background-color: rgb(168, 219, 168);
 }
 
 .immagine1 {
-width: 2000px;
+  display: flex;
+  justify-content: center;
+width: 100%;
 }
 
 
