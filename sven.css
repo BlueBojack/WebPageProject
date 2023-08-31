@@ -155,6 +155,13 @@ body {
 .news-card:hover img{
   transform: translateY(-1rem);
 }
+
+.featured-block .featured-bottom button:hover{
+  background-color: rgb(172, 0, 13);
+  border-color: rgb(172, 0, 13);
+  
+  transform: scaleX(1.05) scaleY(1.05);
+}
 .store-block button:hover{
   background-color: rgb(172, 0, 13);
   border-color: rgb(172, 0, 13);
@@ -244,6 +251,8 @@ margin-bottom: 25px;
   height: 47px;
   padding-left: 17px;
   padding-right: 17px;
+
+  transition: 250ms;
 }
 .store-block-wrapper{
   display: flex;
