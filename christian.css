@@ -134,7 +134,6 @@
   .card1-contenuti .slide10m {
     overflow-x:scroll;
     margin-left: 1rem;
-    gap: 3.5rem;
     display: flex;
     scroll-behavior: smooth;
     
@@ -151,8 +150,9 @@
   .container-card1 .slide10m .digital-card10{
     
     border: 1px solid #ccc;
-    flex: 0 0 220px;
-    max-width: 240px;
+    flex: 0 0 20vw;
+    max-width: 20vw;
+    max-width: 20vw;
     aspect-ratio: 16 / 9;
     margin-right: var(--img-gap);
     margin-top: 24px;
