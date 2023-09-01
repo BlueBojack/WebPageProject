@@ -134,7 +134,6 @@
   .card1-contenuti .slide10m {
     overflow-x:scroll;
     margin-left: 10px;
-    gap: 2rem;
     display: flex;
     scroll-behavior: smooth;
     
