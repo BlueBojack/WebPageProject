@@ -121,6 +121,7 @@
     margin-left: 1rem;
     display: flex;
     scroll-behavior: smooth;
+    gap: 1vw;
     
   }
   
@@ -136,8 +137,8 @@
     
     border: 1px solid #ccc;
     flex: 0 0 20vw;
-    max-width: 20vw;
-    max-width: 20vw;
+    max-width: 18vw;
+    max-height: 25vw;
     aspect-ratio: 16 / 9;
     margin-right: var(--img-gap);
     margin-top: 24px;
@@ -168,7 +169,7 @@
   }
   
   .scrittefinecarosello svg{
-  margin-left: 8vw;
+  margin-left: 6vw;
   }
   
   .barra123{
