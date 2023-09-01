@@ -14,12 +14,13 @@ nav {
     background-color: white;
     position: fixed;
     z-index: 10;
+    font-family:;
 }
 
 nav .top-navbar {
     width: 100vw;
     height: 52px;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     border: 0.2px solid gray;
@@ -56,7 +57,20 @@ nav .top-navbar .top-left-navbar select{
     outline: none;
     position: relative;
     appearance: none;
-    
+    font-size: 0.875rem;
+    font-family: "Museo-sans-rounded",sans-serif;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+nav .top-navbar .top-left-navbar select:hover {
+
+    color: red;
+}
+
+nav .top-navbar .top-left-navbar select:hover nav .underline {
+
+    color: red;
 }
 
 nav .top-navbar .top-left-navbar .ricerca {
@@ -92,6 +106,13 @@ nav .top-navbar .top-right-navbar svg {
     right: 65px;
 }
 
+nav .top-navbar .top-right-navbar div a {
+
+    font-family: "museo-sans-rounded",sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;;
+}
+
 .underline {
 
     height: 1px;
@@ -118,13 +139,7 @@ nav .bottom-navbar .menu {
     border-bottom: 1px solid gray;
 }
 
-nav .bottom-navbar .menu button{
-/*
-   border: none;
-   background-color: none;
-   outline: none;
-*/
-}
+
 
 .mynintendo-items {
     
@@ -135,7 +150,7 @@ nav .bottom-navbar .menu button{
    */
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: ;
   gap: 25px;
   background-color: white;
   opacity: 100;
@@ -153,14 +168,16 @@ nav .bottom-navbar .menu button{
 
     display: flex;
    position: relative;
-   right: 500px;
-   top: 150px;
-   border-radius: 7px;
+   left: 47%;
+   right: 0;
+   top: 13%;
+   bottom: 0;
+   border-radius: 5px;
    width: 115px;
    height: 48px;
    border: 1px solid red;
    background-color: white;
-   font-weight: 400;
+   font-weight: 700;
    font-size: 17px;
    align-items: center;
    justify-content: center;
@@ -175,6 +192,7 @@ nav .bottom-navbar .menu button{
     left: 0;  
     flex-direction: column;
     align-items: top;
+    
 }
 
 .column a {
@@ -185,11 +203,15 @@ nav .bottom-navbar .menu button{
     font-size: 14px;
     font-weight: 300;
     font-size: 0.875rem;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    gap: ;
 }
 
 .column a:hover {
-    transition: 0.4 ease;
+    
     color: red;
+    
 }
 
 .column a svg {
@@ -202,12 +224,20 @@ nav .bottom-navbar .menu button{
     color: black;
     font-size: 15px;
     font-weight: 700;
+    transition: 0.2s ease;
 }
+
+.highlight:hover {
+
+    color: red;
+
+}
+
 
 .mynintendo-dropdown:hover .hover-wrap{
 
     color: red;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 
 }
 
@@ -233,35 +263,8 @@ nav .bottom-navbar .menu button{
   */
 }
 
-.mynintendo-container:hover .mynintendo-container{
-    
-}
 
-.mynintendo-dropdown:hover .cta-shop {
- /*  display: flex;
-   position: relative;
-   right: 500px;
-   top: 150px;
-   border-radius: 7px;
-   width: 115px;
-   height: 48px;
-   border: 1px solid red;
-   background-color: white;
-   font-weight: 400;
-   font-size: 17px;
- */
-}
 
-.cta-shop {
-/*
-   position: relative;
-   right: 500px;
-   top: 150px;
-   width: 115px;
-   height: 48px;
-   
-*/
-}
 
 .mynintendo-dropdown:hover .cta-shop:hover {
 
@@ -282,15 +285,26 @@ nav .bottom-navbar .menu button{
 .mynintendo-items:hover .mynintendo-items {
 
     display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  
+  
   height: 100px;
   width: 1067px;
   top: 100px;
   right: 350px;
+  gap: 30px ;
+  
 }
 
+.column  {
 
+    gap: 200px;
+    
+}
+
+.margin-column-item {
+
+   
+}
 
 .logo-item {
 
@@ -347,7 +361,7 @@ background-color: red;
 
 .games-items {
 
-    position: ;
+    
     display: none;
     width: 961px;
     height: 155px;
@@ -374,7 +388,7 @@ background-color: red;
 }
 
 .games-items .svg-container:hover .games-button-highlight {
-    color: green;
+    color: red;
     transition: red 0.4 ease;
 }
 
@@ -434,7 +448,7 @@ background-color: red;
     padding: 16px;
     text-align: center;
     */
-    position: ;
+    
     display: none;
     width: 961px;
     height: 155px;
@@ -552,7 +566,7 @@ border-radius: 3px;
 }
 
 .play-items {
-    position: ;
+    
     display: none;
     width: 961px;
     height: 155px;
