@@ -8,41 +8,53 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.blue{
-position: relative;
-  width: 100%;
-  background-image: url(https://assets.nintendo.com/image/upload/q_auto:good/f_auto/dpr_2.0/ncom/en_US/merchandising/center-stage-banner/nintendo-direct-august-2023/198x185_SMBW_bg);
-  height: calc((100% - 4rem) - 25rem);
+.header-wrap{
+
+  padding-top: 5%;
 }
 
-.imagesopra{
-  padding-top: 2rem;
+
+.contenitor_header{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blue-background{
+  width: 100%;
+  height: 100%;
+}
+
+.img-background{
+  width:100% ;
+  height:480px; 
+}
+
+.red-box{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 0.25rem;
 }
 
-.image01{
-  width: 96%;
-  display: block;
-  line-height: 0;
-  min-height: 1px;
-  max-width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .section_001{
   position: relative;
   width: 100%;
-  padding-top: 1.5rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 2rem;
   justify-items: start;
   align-items: center;
-  max-width: 90rem;
-  margin-left: 40px;
-  min-height: 1px;
   max-width: 90rem;
   margin-left: auto;
   margin-right: auto;
@@ -81,14 +93,9 @@ a{
   transform: none;
   position: absolute;
   box-sizing: content-box;
-  display: block;
-  border-width: 1px;
   border-style: solid;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
-  top: 0px;
-  left: 0px;
-  padding: 0px;
   border-radius: 0.25rem;
 }
 
@@ -121,7 +128,7 @@ span {
   min-width: 44px;
 }
 
-.border{
+.border_header{
   border-bottom: 1px solid rgb(72, 72, 72);
   color:rgb(72, 72, 72) ;
   font-size: 0.75rem;
@@ -131,3 +138,12 @@ span {
   color:rgb(72, 72, 72) ;
   font-size: 0.75rem;
 }
+
+
+
+
+
+
+
+
+
