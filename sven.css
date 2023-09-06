@@ -3,8 +3,8 @@
 }
 
 :root {
-  --handle-size: 5rem;
-  --handle-size-reversed: -5rem;
+  --handle-size: 4.5rem;
+  --handle-size-reversed: -4.5rem;
   --img-gap: 2.9rem;
 }
 
@@ -14,18 +14,33 @@ body {
   overflow-x: hidden;
 }
 
+.featured-block{
+  width: 100%;
+  
+ display: flex;
+ flex-direction: column;
+ 
+ align-items: center;
+  
+}
+.row{
+  max-width: 74.5rem;
+}
 .featured-block .container {
-  position: relative;
-  width: calc(100% + 2*var(--handle-size));
+
+  
+  /* width: calc(100% + 2*var(--handle-size)); */
   display: flex;
-  left: var(--handle-size-reversed);
+  
   
 }
 
 .featured-block .slider {
+  
+  
   overflow-x:hidden;
   --items-per-screen: 4.8;
-  margin-left: 8px;
+  margin-left: -41px;
   display: flex;
   flex-grow: 1;
   
@@ -35,9 +50,10 @@ body {
 }
 
 .games-slider {
+  
   overflow-x:hidden;
   --items-per-screen: 4.8;
-  margin-left: 30px;
+  
   gap: 35px;
   display: flex;
   flex-grow: 1;
@@ -50,8 +66,8 @@ body {
 .featured-block .slider .news-card {
   
   border: 1px solid #ccc;
-  flex: 0 0 251.5px;
-  max-width: 251.5px;
+  flex: 0 0 241.5px;
+  max-width: 241.5px;
   aspect-ratio: 16 / 9;
   margin-right: var(--img-gap);
   margin-top: 24px;
@@ -109,11 +125,13 @@ body {
 }
 
 .left-handle {
-  
   position: relative;
+  left: calc(4.5rem + 8px);
+  opacity: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  left: -200px;
+  
+  
 }
 
 .right-handle {
@@ -136,6 +154,13 @@ body {
 
 .news-card:hover img{
   transform: translateY(-1rem);
+}
+
+.featured-block .featured-bottom button:hover{
+  background-color: rgb(172, 0, 13);
+  border-color: rgb(172, 0, 13);
+  
+  transform: scaleX(1.05) scaleY(1.05);
 }
 .store-block button:hover{
   background-color: rgb(172, 0, 13);
@@ -192,15 +217,61 @@ margin-bottom: 25px;
 }
 
 .featured-block h2{
+  align-self: flex-start;
   color: rgb(72, 72, 72);
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   font-weight:630;
   font-size: 2rem;
 }
+.featured-img{
+  width: 100%;
+}
+.featured-block .featured-bottom{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 51rem;
+}
+.featured-block .featured-bottom h2{
+  color: rgb(72, 72, 72);
+  font-weight:630;
+  font-size: 1.3rem;
+  align-self: center;
+}
+.featured-block .featured-bottom button{
+  white-space: nowrap;
+  background-color: rgb(230, 0, 18);
+  color: white;
+  font-weight:630;
+  font-size: 1.1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 0, 18);
+  border-radius: 0.25rem;
+  height: 47px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  transition: 250ms;
+}
+.store-block-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 .store-block{
+  
   margin: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  max-width: 80.5rem;
+  
 }
 .store-block h2{
+  margin-bottom: 2rem;
+  align-self: flex-start;
   color: rgb(72, 72, 72);
   
   font-weight:630;
@@ -208,6 +279,7 @@ margin-bottom: 25px;
 }
 .store-block img{
   width: 100%;
+  
 }
 .store-block .bottom-content{
   display: flex;
@@ -239,18 +311,9 @@ margin-bottom: 25px;
   
   transition: 250ms;
 }
-.game-card .game-card-content{
-  padding: 0 16px;
-}
-.best-sellers{
-  margin-left: 24px;
-}
 
-.game-card h3{
-  margin-bottom: 0px;
-}
-.game-card .release-data{
-  margin-bottom: 45px;
-}
+
+
+
 
 

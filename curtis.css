@@ -11,12 +11,16 @@
 nav {
     width: 100vw;
     height: 96px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    font-family:;
 }
 
 nav .top-navbar {
     width: 100vw;
     height: 52px;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     border: 0.2px solid gray;
@@ -53,7 +57,20 @@ nav .top-navbar .top-left-navbar select{
     outline: none;
     position: relative;
     appearance: none;
-    
+    font-size: 0.875rem;
+    font-family: "Museo-sans-rounded",sans-serif;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+nav .top-navbar .top-left-navbar select:hover {
+
+    color: red;
+}
+
+nav .top-navbar .top-left-navbar select:hover nav .underline {
+
+    color: red;
 }
 
 nav .top-navbar .top-left-navbar .ricerca {
@@ -89,6 +106,13 @@ nav .top-navbar .top-right-navbar svg {
     right: 65px;
 }
 
+nav .top-navbar .top-right-navbar div a {
+
+    font-family: "museo-sans-rounded",sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;;
+}
+
 .underline {
 
     height: 1px;
@@ -111,30 +135,64 @@ nav .bottom-navbar .menu {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     border-bottom: 1px solid gray;
 }
 
-nav .bottom-navbar .menu button{
 
-   border: none;
-   background-color: none;
-   outline: none;
-
-}
 
 .mynintendo-items {
     
-    display: none;
+    /*display: none;
     position: absolute;
     width: 1877px;
     height: 300px;
+   */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: ;
+  gap: 25px;
+  background-color: white;
+  opacity: 100;
+  justify-content: center;
 }
 
-.column {
+.mynintendo-logo {
+
+    width: 100vw;
+    
+   
+}
+
+.cta-shop {
 
     display: flex;
+   position: relative;
+   left: 47%;
+   right: 0;
+   top: 13%;
+   bottom: 0;
+   border-radius: 5px;
+   width: 115px;
+   height: 48px;
+   border: 1px solid red;
+   background-color: white;
+   font-weight: 700;
+   font-size: 17px;
+   align-items: center;
+   justify-content: center;
+}
+
+.mynintendo-container {
+    display: none;
+    height: 300px;
+    width: 100vw;
+    background-color: white;
+    position: absolute;
+    left: 0;  
     flex-direction: column;
+    align-items: top;
+    
 }
 
 .column a {
@@ -145,11 +203,15 @@ nav .bottom-navbar .menu button{
     font-size: 14px;
     font-weight: 300;
     font-size: 0.875rem;
+    margin-top: 20px;
+    transition: 0.4s ease;
+    gap: ;
 }
 
 .column a:hover {
-    transition: 0.4 ease;
+    
     color: red;
+    
 }
 
 .column a svg {
@@ -161,56 +223,48 @@ nav .bottom-navbar .menu button{
 
     color: black;
     font-size: 15px;
+    font-weight: 700;
+    transition: 0.2s ease;
 }
+
+.highlight:hover {
+
+    color: red;
+
+}
+
 
 .mynintendo-dropdown:hover .hover-wrap{
 
     color: red;
-    transition: 0.4s ease;
+    transition: 0.2s ease;
 
 }
 
-.mynintendo-dropdown:hover .mynintendo-items {
+.mynintendo-dropdown:hover .mynintendo-container {
 
-    display: flex;
+ /*   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 140px;
-  width: 1035px;
-  top: 150px;
-  right: 400px;
-  gap:25px;
+  height: 250px;
+  width: 100vw;
+  position: absolute;
+  margin-left: 200px;
+  margin-right:200px;
   background-color: white;
-  padding: 16px;
-  margin-left: 404px;
+  top: 184px;
+  left: 0px;
+  opacity: 100;
+  */
+  display: flex;
+  flex-direction: column;
+  /*
+  top: 96px;
+  */
 }
 
-.mynintendo-dropdown:hover .cta-shop {
 
-   position: relative;
-   right: 500px;
-   top: 150px;
-   border-radius: 7px;
-   width: 115px;
-   height: 48px;
-   border: 1px solid red;
-   background-color: white;
-   font-weight: 400;
-   font-size: 17px;
 
-}
-
-.cta-shop {
-
-   position: relative;
-   right: 500px;
-   top: 150px;
-   border-radius: 200px;
-   width: 115px;
-   height: 48px;
-   
-
-}
 
 .mynintendo-dropdown:hover .cta-shop:hover {
 
@@ -226,20 +280,30 @@ nav .bottom-navbar .menu button{
 
 }
 
+
+
 .mynintendo-items:hover .mynintendo-items {
 
     display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  
+  
   height: 100px;
   width: 1067px;
   top: 100px;
   right: 350px;
+  gap: 30px ;
+  
 }
 
-.cta-shop {
+.column  {
 
-    display:none ;
+    gap: 200px;
+    
+}
+
+.margin-column-item {
+
+   
 }
 
 .logo-item {
@@ -256,20 +320,6 @@ background-color: red;
     transition: 0.4s ease;
 }
 
-.games-dropdown:hover .games-items {
-
-
-    position: absolute;
-    display: flex;
-    width: 961px;
-    height: 145px;
-    flex-direction: row;
-    right: 300px;
-    gap: 30px;
-    top: 160px;
-    
-}
-
 .games-dropdown:hover .svg-border {
 
     border-radius: 3px;
@@ -277,16 +327,76 @@ background-color: red;
     
 }
 
+.games-dropdown:hover .games-items {
+
+
+    display: flex;
+    
+}
+
+.games-dropdown:hover .games-container{
+
+    display: flex;
+    
+}
+
+
+.games-container:hover .games-container{
+
+    display: flex;
+}
+
+.games-container {
+
+    width: 100vw;
+    height: 165px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
 .games-items {
 
-    position: absolute;
+    
     display: none;
+    width: 961px;
+    height: 155px;
+    flex-direction: row;
+    right: 300px;
+    gap: 30px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#games-special {
+
+    
+    position: relative;
+    top:9px ;
+}
+
+#specialtext-game {
+
+    position: relative;
+    top: 8px;
+}
+
+.games-items .svg-container:hover .games-button-highlight {
+    color: red;
+    transition: red 0.4 ease;
 }
 
 .game-item a {
 
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .games-items .svg-container button {
@@ -305,9 +415,51 @@ background-color: red;
 
 }
 
-.switch-items{
+.switch-container{
 
+    width: 100vw;
+    height: 165px;
+    background-color: white;
     display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-dropdown:hover .switch-container{
+
+    display: flex;
+}
+
+.switch-items{
+/*
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 961px;
+    height: 145px;
+    gap: 50px;
+    top: 130px;
+    left: 0px;
+    margin-left:442px ;
+    margin-right: 442px;
+    padding: 16px;
+    text-align: center;
+    */
+    
+    display: none;
+    width: 961px;
+    height: 155px;
+    flex-direction: row;
+    right: 300px;
+    gap: 30px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .svg-container button {
@@ -327,23 +479,13 @@ background-color: red;
 
     color: red;
     transition: 0.4s;
+    
 }
 
  .switch-dropdown:hover .switch-items {
 
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    width: 961px;
-    height: 145px;
-    gap: 50px;
-    top: 130px;
-    left: 0px;
-    margin-left:442px ;
-    margin-right: 442px;
-    padding: 16px;
-    text-align: center;
-}
+ }
 
 .switch-item button {
 
@@ -368,7 +510,7 @@ background-color: red;
 
 .switch-items .switch-item:hover button {
 
-    background-color: red;
+    background-color: red   ;
     transition: 0.4s ease;
 }
 
@@ -378,8 +520,14 @@ background-color: red;
 }
 
 #special-svg {
-
+    background-color: white;
     color: red;
+    z-index: 10;
+}
+
+.news-event .hover-wrap:hover a{
+    color: red;
+    transition: 0.4s ease;
 }
 
 .switch-items .switch-item:hover a {
@@ -411,13 +559,6 @@ border-radius: 3px;
 
 }
 
-.news-event .hover-wrap a:hover{
-   
-    color: red;
-    transition: 0.4s ease;
-    
-}
-
 .play-dropdown .hover-wrap a:hover {
 
     color: red;
@@ -425,24 +566,49 @@ border-radius: 3px;
 }
 
 .play-items {
-
+    
     display: none;
+    width: 961px;
+    height: 155px;
+    flex-direction: row;
+    right: 300px;
+    gap: 30px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.play-dropdown:hover .play-container{
+
+    display: flex;
+
+}
+
+.play-container{
+
+    width: 100vw;
+    height: 165px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-items .switch-item:hover a{
+
+    color: red;
+    transition: 0.4s;
 }
 
 .play-dropdown:hover .play-items {
 
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    width: 961px;
-    height: 145px;
-    gap: 50px;
-    top: 130px;
-    left: 290px;
-    margin-left:442px ;
-    margin-right: 442px;
-    padding: 16px;
-    text-align: center;
 }
 
 .play-item button {
@@ -476,4 +642,19 @@ border-radius: 3px;
     text-decoration: none;
     font-weight: 300;
     font-size: 0.875rem;
+}
+
+.play-items .play-item a:hover {
+
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: red;
+}
+
+.games-items .svg-container:hover .games-button-highlight
+
+.play-item {
+
+    color: red;
 }

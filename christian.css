@@ -89,11 +89,23 @@
         
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   .container-card1{
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     padding: 0.5rem;
     overflow-x: hidden;
-    width: 145vh;
+    width: 140vh;
     margin-left: 30vh;
     
   }
@@ -106,10 +118,10 @@
   
   .card1-contenuti .slide10m {
     overflow-x:scroll;
-    margin-left: 10px;
-   
+    margin-left: 1rem;
     display: flex;
     scroll-behavior: smooth;
+    gap: 1vw;
     
   }
   
@@ -124,8 +136,9 @@
   .container-card1 .slide10m .digital-card10{
     
     border: 1px solid #ccc;
-    flex: 0 0 220px;
-    max-width: 240px;
+    flex: 0 0 20vw;
+    max-width: 18vw;
+    max-height: 25vw;
     aspect-ratio: 16 / 9;
     margin-right: var(--img-gap);
     margin-top: 24px;
@@ -156,7 +169,7 @@
   }
   
   .scrittefinecarosello svg{
-  margin-left: 3rem;
+  margin-left: 6vw;
   }
   
   .barra123{
