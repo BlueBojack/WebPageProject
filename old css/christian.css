@@ -1,0 +1,254 @@
+
+
+.titolo{
+  font-weight:620;
+  text-align:left;
+  margin-left: 14rem;
+  font-size: 1.5rem; 
+  color: rgb(72, 72, 72);
+  margin-top: 2rem
+
+}
+
+
+.sezioneImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;  
+}
+
+.card29{
+  width: 15vw;
+  height: 15.2vw;
+  
+
+}
+
+.card-content27{
+overflow: hidden;
+}
+
+
+.nome98{
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  color: rgb(72, 72, 72);
+  text-align: left;
+  margin-top: 5%; 
+}
+
+
+.card29 img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+
+  }
+  
+.card29:nth-child(1){
+  background-image: url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg");
+  background-size:contain;
+  border-radius: 2%;
+}
+
+
+
+
+.card29:nth-child(2){
+  background-image: url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/The Legend of Zelda/1600x1600_background_02");
+  background-size: contain;
+  border-radius: 2%;
+}
+
+.card29:nth-child(3){
+  background-image: url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/Ncom_CharacterRail_1600x1600_Splatoon_BG");
+  background-size: contain;
+  border-radius: 2%;
+}
+
+.card29:nth-child(4){
+  background-image: url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/1600x1600_NCOM_Home_Characters_Kirby_BG");
+  background-size: contain;
+  border-radius: 2%;
+ 
+}
+
+
+
+.separator {
+  height: 1px; 
+  width: 100%;
+  background-color: black;
+ margin-top: 60px; 
+ opacity: 0.2;
+
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-card1{
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  padding: 0.5rem;
+  overflow-x: hidden;
+  width: 92%;
+  max-width: 74.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 30vh; */
+  
+}
+
+.card1-contenuti .container10m {
+  position: relative;
+  display: flex;
+  
+}
+
+.card1-contenuti .slide10m {
+  overflow-x:scroll;
+  margin-left: 1rem;
+  display: flex;
+  scroll-behavior: smooth;
+  gap: 1vw;
+  
+}
+
+.card1-contenuti h2{
+  color: rgb(72, 72, 72);
+  margin-bottom: 0px;
+  font-weight:620;
+  font-size: 1.5rem;
+  
+}
+
+.container-card1 .slide10m .digital-card10{
+  
+  border: 1px solid #ccc;
+  flex: 0 0 20vw;
+  max-width: 18vw;
+  max-height: 25vw;
+  aspect-ratio: 16 / 9;
+  margin-right: var(--img-gap);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 0.3rem;
+}
+
+.container-card1 .slide10m  .digital-card10 img{
+  transition: transform 0.2s ease-in-out;
+  flex: 0 0 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.3rem;
+}
+
+
+.digital-card10 img:hover{
+  transform: translateY(-15px);
+}
+
+.digital-card10:hover h3{
+  color: rgb(230, 0, 18);
+}
+
+.digital-card10 .scrittefinecarosello {
+  display: flex;
+  flex-direction: row;
+}
+
+.scrittefinecarosello svg{
+margin-left: 6vw;
+}
+
+.barra123{
+  width: 3px;
+  height: 1.20rem;
+  background-color: rgb(230, 0, 18);
+  margin-right: 5px;
+  margin-left: 16px;
+  margin-top: 3px;
+}
+
+.digital-card10 .scrittefinecarosello span{
+font-size: 0.9rem;
+color: rgb(109, 109, 109);
+margin-bottom: 25px;
+display: flex;
+}
+
+.digital-card10 h3 {
+  height: 3rem;
+  font-weight:650;
+  font-size: 13px;
+  color: rgb(72, 72, 72);
+  margin: 1.2rem 0;
+  padding: 0 16px;
+  transition: 350ms;
+}
+
+.data10{
+  display: flex;
+  justify-content: start;
+  margin-top: -1.5rem;
+  margin-left: 1.1rem;
+  margin-bottom: 2.5rem;
+  font-size: 10px;
+  opacity: 50%;
+}
+.prezzo15{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+}
+
+.pulsanterossofinale{
+  width:40px;
+  height: 50px;
+  background-color: red;
+
+}
+
+
+.secondText24 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 16vw;
+  margin-top: -1.2rem;
+  color: red;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif ;
+}
+
+.secondText25 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 17vw;
+  margin-top: -1.2rem;
+  color: red;
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif ;
+}
